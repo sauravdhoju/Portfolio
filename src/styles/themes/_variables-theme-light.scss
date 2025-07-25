@@ -33,75 +33,69 @@
 
 @import "theme-variables-builder";
 
-$primary: #269366;
-$secondary: darken(#798287, 10%);
-$dark: #bfe0c5;
-$danger: #932626;
-$muted: #7c8d7f;
+$primary: #d87f49;               // Warm terracotta — inviting and elegant accent
+$secondary: #8e8a95;             // Soft muted lavender-gray for secondary accents
+$dark: #c6c2cc;                  // Dark charcoal for icons & dark accents
+$danger: #bf5f5f;                // Calm muted red for errors, not too aggressive
+$muted: #a29eaa;                 // Muted grayish-lavender for low-emphasis text
 
-$base-bg: #91d7aa;
-$base-bg-light: #a6e3b8;
-$base-bg-dark: #7ecb94;
+$base-bg: #faf8f7;              // Soft warm off-white for background
+$base-bg-light: #fefdfc;        // Very light for highlights/animation circles
+$base-bg-dark: #ede9e7;         // Slightly darker for subtle depth
 
-$texts: #202521;
-$texts-inverted: #EEE;
+$texts: #38343f;                // Dark slate gray — clear but not black
+$texts-inverted: #ffffff;       // For inverted text or buttons
 
-$base-container-bg: #d9f5e0;
-$base-container-bg-accent: #c2e9d0;
-$base-popover-bg: #cae1d4;
-$base-boards: #d2eed8;
-$base-info-badges: #c3e3cd;
-$empty: #e8f8ef;
+$base-container-bg: #ffffff;    // Pure white for cards and containers
+$base-container-bg-accent: #f3f1f4; // Light lavender-gray for accents/inactive states
+$base-popover-bg: #f7f6f8;      // Very light lavender-gray for popovers
+$base-boards: #f9f8fa;          // Lightest shade for boards/cards
+$base-info-badges: #e4dee8;     // Soft lilac for info badges
+$empty: #f5f4f6;                // Input backgrounds & empty states
 
-$borders: #d9efdc;
-$borders-nav-mobile: rgba(white, 0.15);
-$borders-nav-mobile-accent: rgba(white, 0.2);
-$scrollbar-track: #daf5e1;
-$scrollbar-thumb: #55bd91;
+$borders: #d9d5dc;              // Light gray-lavender for borders
+$borders-nav-mobile: rgba(56, 52, 63, 0.07);
+$borders-nav-mobile-accent: rgba(216, 127, 73, 0.3);
+$scrollbar-track: #f0eff1;
+$scrollbar-thumb: #c4b8bf;
 
 [data-theme="light"] {
     @include build-theme(
-        // Theme Config...
-        /** DARK MODE: **/                  false,
+        false,
 
-        // Base Colors...
-        /** PRIMARY: **/                    $primary,
-        /** SECONDARY: **/                  $secondary,
-        /** DARK: **/                       $dark,
-        /** DANGER: **/                     $danger,
-        /** MUTED: **/                      $muted,
+        $primary,
+        $secondary,
+        $dark,
+        $danger,
+        $muted,
 
-        // Main Layout Colors...
-        /** BG: **/                         $base-bg,
-        /** BG CONTRAST: **/                $base-bg-light,
-        /** BG CONTRAST DARKEN:**/          $base-bg-dark,
-        /** TEXTS: **/                      $texts,
-        /** TEXTS (INVERTED): **/           $texts-inverted,
+        $base-bg,
+        $base-bg-light,
+        $base-bg-dark,
+        $texts,
+        $texts-inverted,
 
-        // Nav
-        /** NAV MOBILE BG: **/              $base-container-bg-accent,
-        /** NAV MOBILE: **/                 $texts,
-        /** NAV MOBILE BORDER: **/          $borders-nav-mobile-accent,
+        $base-container-bg-accent,
+        $texts,
+        $borders-nav-mobile-accent,
 
-        /** NAV MOBILE HOVER BG: **/        $base-container-bg-accent,
-        /** NAV MOBILE HOVER: **/           $primary,
+        $base-container-bg-accent,
+        $primary,
 
-        /** NAV MOBILE SELECTED BG: **/     $primary,
-        /** NAV MOBILE SELECTED: **/        $texts-inverted,
-        /** NAV MOBILE SELECTED BORDER: **/ $borders-nav-mobile,
+        $primary,
+        $texts-inverted,
+        $borders-nav-mobile,
 
-        // Main Layout Elements...
-        /** SECTION BG: **/                 $base-container-bg,
-        /** CARD BG: **/                    $base-container-bg,
-        /** POPUPS BG: **/                  $base-popover-bg,
-        /** BOARDS: **/                     $base-boards,
-        /** INFO BADGE BG: **/              $base-info-badges,
-        /** INFO BADGE **/                  $texts,
-        /** EMPTY **/                       $empty,
+        $base-container-bg,
+        $base-container-bg,
+        $base-popover-bg,
+        $base-boards,
+        $base-info-badges,
+        $texts,
+        $empty,
 
-        // Other Colors...
-        /** DEFAULT BORDERS: **/            $borders,
-        /** SCROLLBAR TRACK: **/            $scrollbar-track,
-        /** SCROLLBAR THUMB: **/            $scrollbar-thumb,
+        $borders,
+        $scrollbar-track,
+        $scrollbar-thumb,
     );
 }
