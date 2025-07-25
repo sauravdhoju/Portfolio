@@ -7,7 +7,7 @@
     },
     "preloaderSettings": {
         "enabled": true,
-        "title": "<b>Portfolio</b>",
+        "title": "React<b>Portfolio</b>",
         "subtitle": "by Saurav Dhoju",
         "logoOffset": {
             "right": 14,
